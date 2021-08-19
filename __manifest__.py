@@ -7,6 +7,6 @@
     'description':"Store created on Odoo v13",
     'category':'Shop',
     'website':'null',
-    'depends':['base']
+    'depends':['sale']
 
 }
