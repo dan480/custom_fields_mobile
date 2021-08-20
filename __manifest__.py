@@ -8,6 +8,9 @@
     'description':"Adds a custom field to the product",
     'category':'Category',
     'depends':['product'],
-    'data': ['views/product_template_views.xml'],
+    'data': [
+        'views/product_template_views.xml',
+        'views/add_phone_menu.xml',
+    ],
 
 }
