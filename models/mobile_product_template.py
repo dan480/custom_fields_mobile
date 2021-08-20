@@ -1,19 +1,11 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
-
-import itertools
-import logging
-from collections import defaultdict
 
 from odoo import api, fields, models, tools, _, SUPERUSER_ID
-_logger = logging.getLogger(__name__)
 
-
-class ProductTemplate(models.Model):
-    _name = "product.template"
-    _inherit = ['mail.thread', 'mail.activity.mixin', 'image.mixin']
-    _description = "Product Template"
-    _order = "name"
+class MobileProduct(models.Model):
+    _name = "mobile_product.template"
+    _inherit = "product"
+    _description = "Add custom fields in Product Template"
     
     # custom fields
     manufacturer = fields.One2many(
