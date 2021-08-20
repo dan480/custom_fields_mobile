@@ -1,2 +1,2 @@
-# mobile_shop_odoo
-Mobile store module built on Odoo
+# Fields_for_mobile
+Adding custom fields to the product.
