@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+	<menuitem id="add_manufacture" name="Add_manufacture"/>
+	<menuitem id="add_model" name="Add_model"/>
+	
+	
+	
+</odoo>
