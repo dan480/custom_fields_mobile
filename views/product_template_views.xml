@@ -1,7 +1,7 @@
 <odoo>
-	<record id="product_template_form_view" model="ir.ui.view">
-		<field name="name">product.template.inherit</field>
-		<field name="model">product.template</field>
+	<record id="product_mobile_form_view_inherit" model="ir.ui.view">
+		<field name="name">product.mobile.inherit</field>
+		<field name="model">product.mobile</field>
 		<field name="inherit_id" ref="product.product_template_only_form_view"/>
 		<field name="arch" type="xml">
 			<xpath expr="//field[@name='barcode']" position="after">
