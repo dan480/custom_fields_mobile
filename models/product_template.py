@@ -59,6 +59,12 @@ class ProductTemplate(models.Model):
         'res.currency', 'Currency', compute='_compute_currency_id')
     cost_currency_id = fields.Many2one(
         'res.currency', 'Cost Currency', compute='_compute_cost_currency_id')
+    
+    # custom fields
+    manufacturer = fields.Many2one(
+        'product.manufacturer', 'Manufacturer', required=True, help="Select manufacturer for the current product")
+    #model = fields.One2one()
+    
 
     # price fields
     # price: total template price, context dependent (partner, pricelist, quantity)
