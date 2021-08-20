@@ -9,4 +9,5 @@ class ProductMobile(models.Model):
     
     # custom fields
     manufacturer = fields.Selection([('huawei', 'Huawei'), ('xiaomi', 'Xiaomi'), ('samsung', 'Samsung'), ('sony', 'Sony')], string='Manufacturer')
-    model = fields.One2many('product.mobile', 'manufacturer', 'Model')
+    manufacturer_id = fields.Many2one('manufacturer', 'Manufacturer Id', index=True, ondelete='cascade')
+    model = fields.One2many('product.mobile', 'manufacturer_id', 'Model')
