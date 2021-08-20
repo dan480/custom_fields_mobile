@@ -1,11 +1,11 @@
 {
-    'name':'Mobile_shop',
+    'name':'Mobile_product',
     'version':'1.1',
     'author':'A.Sakovich',
-    'summary':"Online mobile phone shop",
+    'summary':"Custom_felds_product",
     'sequence': 1,
-    'description':"Store created on Odoo v13",
-    'category':'Shop',
+    'description':"Adds a custom field to the product",
+    'category':'service',
     'website':'null',
     'depends':['sale'],
 
