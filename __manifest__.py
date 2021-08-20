@@ -11,6 +11,7 @@
     'data': [
         'views/product_template_views.xml',
         'views/add_phone_menu.xml',
+        'views/add_quick_create.xml',
     ],
 
 }
