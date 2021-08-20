@@ -5,13 +5,13 @@
             name="Add manufacture phone"
             parent="sale.menu_sale_config"
             action="sales_team.sales_team_config_action"
-            sequence="0"/>
+            sequence="1"/>
 	
 	<menuitem id="add_model"
             name="Add model phone"
             parent="sale.menu_sale_config"
             action="sales_team.sales_team_config_action"
-            sequence="1"/>
+            sequence="2"/>
 	
 	
 	<menuitem id="sales_team_config"
