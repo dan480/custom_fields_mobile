@@ -5,27 +5,15 @@
             name="Add manufacture phone"
             parent="sale.menu_sale_config"
             action="sales_team.sales_team_config_action"
-            sequence="1"/>
+            sequence="6"/>
 	
 	<menuitem id="add_model"
             name="Add model phone"
             parent="sale.menu_sale_config"
             action="sales_team.sales_team_config_action"
-            sequence="2"/>
+            sequence="7"/>
 	
-	
-	<menuitem id="sales_team_config"
-            name="Sales Teams"
-            parent="sale.menu_sale_config"
-            action="sales_team.sales_team_config_action"
-            sequence="3"/>
-	
-	<menuitem id="menu_sales_config"
-            parent="menu_sale_config"
-            sequence="4"
-            name="Sales Orders"/>
-	
-	<menuitem id="prod_config_main" name="Products" parent="menu_sale_config" sequence="5"/>
+
 	
 	
 	
