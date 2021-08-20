@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+
+
+
 {
     'name':'Mobile_product',
     'version':'1.1',
@@ -7,7 +11,7 @@
     'description':"Adds a custom field to the product",
     'category':'service',
     'website':'null',
-    'depends':['sale'],
+    'depends':['base'],
     'data': ['views/product_template_views.xml'],
 
 }
