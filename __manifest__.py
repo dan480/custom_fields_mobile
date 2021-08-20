@@ -7,7 +7,7 @@
     'summary':"Custom_felds_product",
     'description':"Adds a custom field to the product",
     'category':'Category',
-    'depends':['base'],
+    'depends':['product'],
     'data': ['views/product_template_views.xml'],
 
 }
