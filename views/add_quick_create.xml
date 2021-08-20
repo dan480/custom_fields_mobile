@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+	<menuitem id="menu_quick_create_product" 
+            name="Quick create product" 
+            parent="product_menu_catalog" 
+            action="product.product_pricelist_action2" 
+            groups="product.group_product_pricelist" 
+            sequence="4" active="True"/>
+	
+</odoo>
