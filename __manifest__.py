@@ -7,7 +7,7 @@
     'description':"Adds a custom field to the product",
     'category':'service',
     'website':'null',
-    'depends':['base', 'sale'],
+    'depends':['sale'],
     'data': ['views/product_template_views.xml'],
 
 }
