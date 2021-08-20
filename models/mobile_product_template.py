@@ -2,7 +2,8 @@
 
 from odoo import fields, models
 
-class MobileProductTemplate(models.Model):
+class ProductMobile(models.Model):
+    _name = "product.mobile"
     _inherit = "product.template"
     _description = "Add custom fields in Product Template"
     _parent_store = True
