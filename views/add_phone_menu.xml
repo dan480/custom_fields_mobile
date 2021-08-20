@@ -14,5 +14,19 @@
             sequence="1"/>
 	
 	
+	<menuitem id="sales_team_config"
+            name="Sales Teams"
+            parent="sale.menu_sale_config"
+            action="sales_team.sales_team_config_action"
+            sequence="3"/>
+	
+	<menuitem id="menu_sales_config"
+            parent="menu_sale_config"
+            sequence="4"
+            name="Sales Orders"/>
+	
+	<menuitem id="prod_config_main" name="Products" parent="menu_sale_config" sequence="5"/>
+	
+	
 	
 </odoo>
