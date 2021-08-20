@@ -1,6 +1,6 @@
 <odoo>
 	<record id="product_view_from_inherit" model="ir.ui.view">
-		<field name="name">product.inherit</field>
+		<field name="name">product.template.inherit</field>
 		<field name="model">product</field>
 		<field name="inherit_id" ref="product.product_template_only_form_view"/>
 		<field name="arch" type="xml">
