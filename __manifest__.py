@@ -8,6 +8,6 @@
     'category':'service',
     'website':'null',
     'depends':['base', 'sale'],
-    'data': ['views/custom_fields_view.xml'],
+    'data': ['views/product_template_views.xml'],
 
 }
