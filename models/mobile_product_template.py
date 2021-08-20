@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from odoo import api, fields, models, tools, _, SUPERUSER_ID
+from odoo import api, fields, models
 
-class MobileProduct(models.Model):
-    _name = "mobile_product.template"
-    _inherit = "product"
+class ProductTemplate(models.Model):
+    _inherit = "product.template"
     _description = "Add custom fields in Product Template"
     
     # custom fields
