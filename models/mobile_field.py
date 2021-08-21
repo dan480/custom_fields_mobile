@@ -11,12 +11,14 @@ class MobilePhone(models.Model):
     model_id = fields.One2many('model.phone', 'manufacturer_id', string='Model')
     
 class ManufacturerPhone(models.Model):
-    _name = 'manufacturer.phone'
+    _name = "manufacturer.phone"
+    _inherit = "product.tmplate"
  
     manufacturer = fields.Char('Manufacturer')
     
 class ModelPhone(models.Model):
-    _name = 'model.phone'
+    _name = "model.phone"
+    _inherit = "product.tmplate"
  
     model = fields.Char('Model')
     
