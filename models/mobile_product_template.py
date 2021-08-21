@@ -7,4 +7,10 @@ class ProductMobile(models.Model):
     _description = "Add custom fields in Product Template"
     
     # custom fields
-    manufacturer = fields.Selection([('huawei', 'Huawei'), ('xiaomi', 'Xiaomi'), ('samsung', 'Samsung'), ('sony', 'Sony')], string='Manufacturer')
+    manufacturer = fields.Selection([('huawei', 'Huawei'),
+                                     ('xiaomi', 'Xiaomi'),
+                                     ('samsung', 'Samsung'),
+                                     ('sony', 'Sony')],
+                                    help="Please select manufacturer phone",
+                                    required="True"
+                                   )
