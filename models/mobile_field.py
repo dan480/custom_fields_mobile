@@ -7,18 +7,8 @@ class MobilePhone(models.Model):
     _inherit = "product.template"
     
     # Relations fields    
-    manufacturer_id = fields.Many2one('manufacturer.phone', string='Manufacturer')
-    model_id = fields.One2many('model.phone', 'manufacturer_id', string='Model')
-    
-class ManufacturerPhone(models.Model):
-    _name = "manufacturer.phone"
-    _inherit = "product.template"
- 
+    manufacturer_id = fields.Many2one('manufacturer', string='Manufacturer')
+    model_id = fields.One2many('model', 'manufacturer_id', string='Model')
     manufacturer = fields.Char('Manufacturer')
-    
-class ModelPhone(models.Model):
-    _name = "model.phone"
-    _inherit = "product.template"
- 
     model = fields.Char('Model')
     
