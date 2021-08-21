@@ -2,8 +2,8 @@
 
 from odoo import fields, models, api
 
-class ProductMobile(models.Model):
-    _name = "product.mobile"
+class MobilePhone(models.Model):
+    _name = "mobile.phone"
     
     # Relations fields    
     manufacturer_id = fields.Many2one('manufacturer.phone', string='Manufacturer')
