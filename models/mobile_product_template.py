@@ -12,5 +12,4 @@ class ProductMobile(models.Model):
                                      ('samsung', 'Samsung'),
                                      ('sony', 'Sony')],
                                     help="Please select manufacturer phone",
-                                    required=True
-                                   )
+                                    required=True)
