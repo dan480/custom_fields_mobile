@@ -10,7 +10,7 @@ class ProductMobile(models.Model):
     manufacturer_list = [('huawei', 'Huawei'),
                          ('sony', 'Sony')]
     manufacturer = fields.Selection(selection_add(manufacturer_list),
-                                    index=True
+                                    index=True,
                                     required=True)
     
     model_phone = fields.Selection([('p20', 'p20'), ('p20pro', 'p20pro')])
