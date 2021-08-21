@@ -4,8 +4,7 @@
 	
 	<menuitem id="menu_quick_create_product" 
             name="Quick create product" 
-            parent="product_menu_catalog" 
-            action="product.product_pricelist_action2" 
+            parent="sale.product_menu_catalog" 
             sequence="4" active="True"/>
 	
 </odoo>
