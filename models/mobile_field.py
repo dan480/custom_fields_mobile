@@ -3,7 +3,6 @@
 from odoo import fields, models, api
 
 class MobilePhone(models.Model):
-    _name = "mobile.phone"
     _inherit = "product.template"
     
     # Relations fields    
