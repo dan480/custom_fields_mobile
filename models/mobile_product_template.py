@@ -7,8 +7,11 @@ class ProductMobile(models.Model):
     _description = "Add custom fields in Product Template"
     
     # custom field
-    manufacturer = fields.Selection()
-    manufaturer_id = fields.Many2one('product.template', string="Manufacturer")
-    model_list = fields.One2many('product.template', 'manufaturer_id', string="Model list")
-    model = fields.Selection(model_list)
+    manufacturer_list = [('huawei', 'Huawei'),
+                         ('sony', 'Sony')]
+    manufacturer = fields.Selection(selection_add(manufacturer_list),
+                                    index=True
+                                    required=True)
+    
+    model = fields.Selection([])
     
