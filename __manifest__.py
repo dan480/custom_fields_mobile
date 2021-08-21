@@ -7,12 +7,11 @@
     'summary':"Custom mobile module",
     'description':"Module for creating a product-mobile phone",
     'category':'Customizations',
-    'depends':['sale_management', 'product'],
+    'depends':['base'],
     'data': [
         'views/mobile_views.xml',
         'views/add_phone_menu.xml',
         'views/add_quick_create.xml'
     ],
-    'installable': True
 
 }
