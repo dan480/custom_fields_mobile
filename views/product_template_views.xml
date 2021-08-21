@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-	<record id="mobile_view" model="ir.ui.view">
-		<field name="name">mobile.view</field>
-		<field name="model">mobile</field>
+	<record id="product_form_view" model="ir.ui.view">
+		<field name="name">product.form.view</field>
+		<field name="model">mobile.phone</field>
 		<field name="inherit_id" ref="product.product_template_only_form_view"/>
 		<field name="arch" type="xml">
 			<field name="barcode" position="after">
