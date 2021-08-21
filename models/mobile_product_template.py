@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import fields, models
+from odoo import fields, models, api
 
 class ProductMobile(models.Model):
     _inherit = "product.mobile"
