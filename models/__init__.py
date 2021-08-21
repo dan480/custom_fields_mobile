@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import mobile_product_template
+from . import mobile_field
