@@ -6,12 +6,12 @@
     'author':'A.Sakovich',
     'summary':"Custom mobile module",
     'description':"Module for creating a product-mobile phone",
-    'category':'Category',
+    'category':'Extra Tools',
     'depends':['sale', 'product'],
-    'data': [
-        'views/product_template_views.xml',
-        'views/add_phone_menu.xml',
-        'views/add_quick_create.xml',
-    ],
+   # 'data': [
+        #'views/product_template_views.xml',
+        #'views/add_phone_menu.xml',
+        #'views/add_quick_create.xml',
+    #],
 
 }
