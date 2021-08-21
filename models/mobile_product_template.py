@@ -3,7 +3,7 @@
 from odoo import fields, models, api
 
 class ProductMobile(models.Model):
-    _inherit = "product.mobile"
+    _name = "product.mobile"
     _description = "Add custom fields"
     
     # Relations fields    
