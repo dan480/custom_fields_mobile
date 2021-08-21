@@ -2,7 +2,7 @@
 
 {
     'name':'Custom_module',
-    'version':'1.1',
+    'version':'0.1',
     'author':'A.Sakovich',
     'summary':"Custom mobile module",
     'description':"Module for creating a product-mobile phone",
