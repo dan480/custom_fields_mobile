@@ -3,7 +3,7 @@
 <odoo>
 	<record id="mobile_view" model="ir.ui.view">
 		<field name="name">mobile.view</field>
-		<field name="model">product.mobile.product.mobile</field>
+		<field name="model">mobile</field>
 		<field name="inherit_id" ref="product.product_template_only_form_view"/>
 		<field name="arch" type="xml">
 			<field name="barcode" position="after">
