@@ -2,13 +2,13 @@
 
 <odoo>
 	<menuitem id="add_manufacture"
-            name="Add manufacture phone"
+            name="Add a manufacture phone"
             parent="sale.menu_sale_config"
             action="sales_team.sales_team_config_action"
             sequence="11"/>
 	
 	<menuitem id="add_model"
-            name="Add model phone"
+            name="Add a model phone"
             parent="sale.menu_sale_config"
             action="sales_team.sales_team_config_action"
             sequence="12"/>	
