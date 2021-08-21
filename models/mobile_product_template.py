@@ -13,5 +13,5 @@ class ProductMobile(models.Model):
                                     index=True
                                     required=True)
     
-    model = fields.Selection([])
+    model_phone = fields.Selection([('p20', 'p20'), ('p20pro', 'p20pro')])
     
