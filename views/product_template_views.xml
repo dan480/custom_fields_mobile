@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-	<!--
 	<record id="product_form_view" model="ir.ui.view">
 		<field name="name">product.form.view</field>
 		<field name="model">product.mobile</field>
@@ -13,6 +12,5 @@
 			</field>		
 		</field>	
 	</record>
--->
 
 </odoo>
