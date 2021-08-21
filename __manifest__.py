@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name':'Mobile_product',
+    'name':'Mobile_module',
     'version':'1.1',
     'author':'A.Sakovich',
-    'summary':"Custom_felds_product",
-    'description':"Adds a custom field to the product",
+    'summary':"Custom mobile module",
+    'description':"Module for creating a product-mobile phone",
     'category':'Category',
     'depends':['product'],
     'data': [
