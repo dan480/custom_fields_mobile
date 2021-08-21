@@ -4,6 +4,7 @@ from odoo import fields, models, api
 
 class MobilePhone(models.Model):
     _name = "mobile.phone"
+    _inherit = "product.tmplate"
     
     # Relations fields    
     manufacturer_id = fields.Many2one('manufacturer.phone', string='Manufacturer')
