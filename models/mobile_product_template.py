@@ -8,5 +8,4 @@ class ProductMobile(models.Model):
     
     # custom fields
     manufacturer = fields.Selection([('huawei', 'Huawei'), ('xiaomi', 'Xiaomi'), ('samsung', 'Samsung'), ('sony', 'Sony')], string='Manufacturer')
-    model_list = {'huawei':['p20', 'p20 pro', 'p30', 'p30 pro']}     
-    model = fields.One2many('model_list', 'manufacturer', 'Model')
+    model = fields.Selection(['p20', 'p20 pro', 'p30', 'p30 pro'])
