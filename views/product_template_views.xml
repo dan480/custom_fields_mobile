@@ -4,6 +4,7 @@
 	<record id="product_form_view" model="ir.ui.view">
 		<field name="name">product.form.view</field>
 		<field name="model">mobile.phone</field>
+		<field name="priority" eval="50" />
 		<field name="inherit_id" ref="product.product_template_only_form_view"/>
 		<field name="arch" type="xml">
 			<field name="barcode" position="after">
