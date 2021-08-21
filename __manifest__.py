@@ -6,7 +6,7 @@
     'author':'A.Sakovich',
     'summary':"Custom mobile module",
     'description':"Module for creating a product-mobile phone",
-    'category':'Extra Tools',
+    'category':'Customizations',
     'depends':['sale', 'product'],
    # 'data': [
         #'views/product_template_views.xml',
