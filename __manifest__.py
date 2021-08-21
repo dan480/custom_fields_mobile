@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name':'Mobile_module',
+    'name':'Custom_module',
     'version':'1.1',
     'author':'A.Sakovich',
     'summary':"Custom mobile module",
