@@ -3,8 +3,8 @@
 from odoo import fields, models
 
 class ProductMobile(models.Model):
-    _inherit = "product.template"
-    _description = "Add custom fields in Product Template"
+    _inherit = "product.mobile"
+    _description = "Add custom fields"
     
     # Relations fields    
     manufacturer_id = fields.Many2one('manufacturer.phone', string='Manufacturer')
