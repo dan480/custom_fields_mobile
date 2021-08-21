@@ -4,7 +4,6 @@ from odoo import fields, models, api
 
 class ProductMobile(models.Model):
     _name = "product.mobile"
-    _description = "Add custom fields"
     
     # Relations fields    
     manufacturer_id = fields.Many2one('manufacturer.phone', string='Manufacturer')
