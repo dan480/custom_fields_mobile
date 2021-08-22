@@ -2,7 +2,7 @@
 from odoo import fields, models, api
 
 class ProductTemplateInherit(models.Model):
-    _inherit = "product.template"
+    _inherit = 'product.template'
 
     manufacturer_list = [('huawei', 'Huawei'), ('sony', 'Sony')]
     manufacturer = fields.Selection(manufacturer_list)
