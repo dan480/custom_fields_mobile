@@ -5,7 +5,7 @@
 	<menuitem id="menu_quick_create_product" 
             name="Quick create product" 
             parent="sale.product_menu_catalog"
-	    action="sales_team.sales_team_config_action"
+	    action=""
             sequence="4"/>
 	
 </odoo>
