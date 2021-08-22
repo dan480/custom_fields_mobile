@@ -4,10 +4,10 @@ from odoo import fields, models, api
 class ProductTemplateInherit(models.Model):
     _inherit = 'product.template'
 
-    manufacturer_list = [('huawei', 'Huawei'), ('sony', 'Sony')]
-    manufacturer = fields.Selection(manufacturer_list)
-    model_list = {'huawei': [('p20', 'p20'), ('p30', 'p30')]}
-    model = fields.Selection(model_list.get(manufacturer))
+    #manufacturer_list = [('huawei', 'Huawei'), ('sony', 'Sony')]
+    manufacturer = fields.Selection([('huawei', 'Huawei'), ('sony', 'Sony')])
+    #model_list = {'huawei': [('p20', 'p20'), ('p30', 'p30')]}
+    #model = fields.Selection(model_list.get(manufacturer))
 
     
 
