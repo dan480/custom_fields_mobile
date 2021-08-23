@@ -4,12 +4,12 @@
 	<menuitem id="add_manufacture"
             name="Add a manufacture phone"
             parent="sale.menu_sale_config"
-            action=""
+            action="sales_team.sales_team_config_action"
             sequence="11"/>
 	
 	<menuitem id="add_model"
             name="Add a model phone"
             parent="sale.menu_sale_config"
-            action=""
+            action="sales_team.sales_team_config_action"
             sequence="12"/>	
 </odoo>
