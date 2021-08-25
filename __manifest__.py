@@ -10,8 +10,7 @@
     'depends':[],
     'data': [
         'views/mobile_views_part1.xml',
-        'views/add_phone_menu.xml',
-        'views/add_quick_create.xml'
+        'views/mobile_views_part2.xml',
     ],
     'installable': True,
 
