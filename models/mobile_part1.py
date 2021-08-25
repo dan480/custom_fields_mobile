@@ -6,7 +6,7 @@ class MobileProduct(models.Model):
     _name = 'mobile.product'
     _inherit = 'product.template'
     
-    product_id = fields.Many2ona('mobile.phone')
+    #product_id = fields.Many2one('mobile.phone')
     manufacturer = fields.Selection([('huawei', 'Huawei')])
     #manufacturer = fields.One2many('custom.product', 'product_id')
     #model_phone = fields.Selection([('p20', 'P20')])
