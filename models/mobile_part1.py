@@ -11,10 +11,5 @@ class MobileProduct(models.Model):
     #manufacturer = fields.One2many('custom.product', 'product_id')
     #model_phone = fields.Selection([('p20', 'P20')])
     
-     @api.model
-    def create(self , vals):
-        # import pdb; pdb.set_trace()
-        res = super(MobileProduct, self).create(vals)
-        print("this function is working")
-        return res
+
    
