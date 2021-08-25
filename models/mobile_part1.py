@@ -3,7 +3,6 @@ from odoo import fields, models, api
 
 
 class CustomProduct(models.Model):
-    _name = 'custom.product'
     _inherit = 'product.template'
     
     product_id = fields.Many2ona('mobile.phone')
