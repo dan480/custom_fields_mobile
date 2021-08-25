@@ -3,7 +3,7 @@ from odoo import fields, models, api, _
 
 
 class MobileProduct(models.Model):
-    _name = 'mobile.product'
+    _inherit = 'product.template'
     
     #product_id = fields.Many2one('mobile.phone')
     manufacturer = fields.Selection([('huawei', 'Huawei')], string="Manufacturer")
