@@ -2,7 +2,8 @@
 from odoo import fields, models, api
 
 
-class CustomProduct(models.Model):
+class MobileProduct(models.Model):
+    _name = 'mobile.product'
     _inherit = 'product.template'
     
     product_id = fields.Many2ona('mobile.phone')
@@ -13,7 +14,7 @@ class CustomProduct(models.Model):
      @api.model
     def create(self , vals):
         # import pdb; pdb.set_trace()
-        res = super(CustomProduct, self).create(vals)
+        res = super(MobileProduct, self).create(vals)
         print("this function is working")
         return res
    
