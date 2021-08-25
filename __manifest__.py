@@ -9,7 +9,7 @@
     'category':'Customizations',
     'depends':['product', 'sale'],
     'data': [
-        
+        'views/mobile_views_part1.xml',
         'views/mobile_views_part2.xml',
     ],
     'installable': True,
