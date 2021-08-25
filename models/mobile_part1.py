@@ -6,8 +6,6 @@ class CustomProduct(models.Model):
     _inherit = 'product.template'
     
     product_id = fields.Many2ona('manufacturer.phone')
-    manufacturer = fields.Selection([('huawei', 'Huawei')])
-
 
 class ManufacturerPhone(models.Model):
     _name = 'manufacturer.phone'
