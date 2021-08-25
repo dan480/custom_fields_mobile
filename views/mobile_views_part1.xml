@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<data>
-	<!--
-	<record id="product_template_inherit" model="ir.ui.view">
-		<field name="name">product_template_inherit</field>
-		<field name="model">product.template</field>
-		<field name="inherit_id" ref="product.product_template_only_form_view"/>
-		<field name="arch" type="xml">
-			<field name="barcode" position="after">
-				<field name="manufacturer" string="Manufacturer"/>
-			</field>		
-		</field>
-	</record> -->
+		<record id="product_template_inherit" model="ir.ui.view">
+			<field name="name">product_template_inherit</field>
+			<field name="model">product.template</field>
+			<field name="inherit_id" ref="product.product_template_only_form_view"/>
+			<field name="arch" type="xml">
+				<field name="barcode" position="after">
+					<field name="manufacturer" string="Manufacturer"/>
+				</field>
+			</field>
+		</record>
 	
 	<!--<record id="manufacturer_view" model="ir.ui.view">
         <field name="name">manufacturer.view</field>
@@ -25,7 +24,7 @@
         </record>-->
 	
 	
-	<record id="action_add_manufacturer" model="ir.actions.act_window">
+	<!--<record id="action_add_manufacturer" model="ir.actions.act_window">
             <field name="name">Mobile Product</field>
 	    <field name="type">ir.actions.act_window</field>
             <field name="res_model">mobile.product</field>
@@ -36,7 +35,7 @@
             name="Manufacturer"
             parent="sale.menu_sale_config"
             action="action_add_manufacturer"
-            sequence="11"/>
+            sequence="11"/>-->
 	
 	<!--<menuitem id="add_model"
             name="Model"
