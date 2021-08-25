@@ -5,7 +5,7 @@
     'version':'0.1',
     'author':'A.Sakovich',
     'summary':"Custom mobile module",
-    'description':"Module for creating a product-mobile phone",
+    'description':"A module that modifies the standard <Product> module",
     'category':'Customizations',
     'depends':[],
     'data': [
