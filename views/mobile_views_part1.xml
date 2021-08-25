@@ -2,12 +2,12 @@
 <odoo>
 	<record id="product_template_inherit" model="ir.ui.view">
 		<field name="name">product_template_inherit</field>
-		<field name="model">product.product</field>
+		<field name="model">product.template</field>
 		<field name="inherit_id" ref="product.product_normal_form_view"/>
 		<field name="arch" type="xml">
-			<field name="barcode" position="after">
+			<xpath expr="//field[@name='barcode']" position="after">
 				<field name="manufacturer" string="Manufacturer"/>
-			</field>
+			</xpath>
 		</field>
         </record>
 	
