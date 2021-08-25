@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+	<data>
 	
-	<!--<record id="product_template_inherit" model="ir.ui.view">
-		<field name="name">product.template.inherit</field>
-		<field name="model">mobile.product</field>
+	<record id="product_template_inherit" model="ir.ui.view">
+		<field name="name">product_template_inherit</field>
+		<field name="model">product.template</field>
 		<field name="inherit_id" ref="product.product_template_only_form_view"/>
 		<field name="arch" type="xml">
 			<field name="barcode" position="after">
@@ -24,18 +25,13 @@
         </record>-->
 	
 	
-	<!--<record id="action_add_manufacturer" model="ir.actions.act_window">
+	<record id="action_add_manufacturer" model="ir.actions.act_window">
             <field name="name">Mobile Product</field>
 	    <field name="type">ir.actions.act_window</field>
             <field name="res_model">mobile.product</field>
-            <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
-	    <p>
-            Add manufacturer phone
-            </p>
-	    </field>
-        </record>-->
+        </record>
 	
 	<menuitem id="add_manufacturer"
             name="Manufacturer"
@@ -87,6 +83,6 @@
     
 	
 	-->
-
+	</data>
 
 </odoo>
