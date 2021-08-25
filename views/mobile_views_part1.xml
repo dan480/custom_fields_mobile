@@ -14,7 +14,7 @@
 	
 	<record id="manufacturer_view" model="ir.ui.view">
         <field name="name">manufacturer.view</field>
-        <field name="model">mobile.phone</field>
+        <field name="model">product.template.mobile.phone</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="manufacturer" />
