@@ -6,9 +6,9 @@ class MobileProduct(models.Model):
     _name = 'mobile.product'
     
     #product_id = fields.Many2one('mobile.phone')
-    manufacturer = fields.Selection([('huawei', 'Huawei')])
+    manufacturer = fields.Selection([('huawei', 'Huawei')], string="Manufacturer")
     #manufacturer = fields.One2many('custom.product', 'product_id')
-    #model_phone = fields.Selection([('p20', 'P20')])
+    model_phone = fields.Selection([('p20', 'P20')], string="Model")
     
 
    
