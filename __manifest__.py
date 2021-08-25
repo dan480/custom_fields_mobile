@@ -7,7 +7,7 @@
     'summary':"Custom mobile module",
     'description':"A module that modifies the standard <Product> module",
     'category':'Customizations',
-    'depends':['sale'],
+    'depends':['product'],
     'data': [
         'views/mobile_views_part1.xml',
         'views/mobile_views_part2.xml',
