@@ -2,6 +2,12 @@
 from odoo import fields, models, api
 
 
+class CustomProduct(models.Model):
+    _inherit = 'product.template'
+    
+    product_id = fields.Many2ona('res.users')
+
+
 class ProductMobile(models.Model):
     _name = 'product.mobile'
 
