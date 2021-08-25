@@ -4,12 +4,12 @@
 	<menuitem id="add_manufacture"
             name="Manufacture"
             parent="sale.menu_sale_config"
-            action="sales_team.sales_team_config_action"
+            action="action_add_manufacture"
             sequence="11"/>
 	
 	<menuitem id="add_model"
             name="Model"
             parent="sale.menu_sale_config"
-            action="sales_team.sales_team_config_action"
-            sequence="12"/>	
+            action="action_add_model"
+            sequence="12"/>
 </odoo>
