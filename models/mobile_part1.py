@@ -12,6 +12,6 @@ class ProductMobile(models.Model):
     _name = 'product.mobile'
     _description = 'Add manufacturer'
 
-    #manufacturer = fields.Selection([('huawei', 'Huawei')])
+    manufacturer = fields.Selection([('huawei', 'Huawei')])
 
 
