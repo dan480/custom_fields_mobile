@@ -9,6 +9,7 @@ class CustomProduct(models.Model):
 
 class MobilePhone(models.Model):
     _name = 'mobile.phone'
+    _inherit = 'product.template'
     _description = 'Add custom fields in product'
 
     manufacturer = fields.Selection([('huawei', 'Huawei')])
