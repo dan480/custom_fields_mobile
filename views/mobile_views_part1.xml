@@ -24,7 +24,7 @@
         </record>-->
 	
 	
-	<record id="action_add_manufacturer" model="ir.actions.act_window">
+	<!--<record id="action_add_manufacturer" model="ir.actions.act_window">
             <field name="name">Mobile Product</field>
 	    <field name="type">ir.actions.act_window</field>
             <field name="res_model">mobile.product</field>
@@ -35,7 +35,7 @@
             Add manufacturer phone
             </p>
 	    </field>
-        </record>
+        </record>-->
 	
 	<menuitem id="add_manufacturer"
             name="Manufacturer"
