@@ -10,7 +10,7 @@
 				<field name="manufacturer" string="Manufacturer"/>
 			</field>		
 		</field>
-	</record>-->
+	</record>
 	
 	<record id="manufacturer_view" model="ir.ui.view">
         <field name="name">manufacturer.view</field>
@@ -21,7 +21,7 @@
                 <field name="model_phone" />
             </tree>
         </field>
-        </record>
+        </record>-->
 	
 	
 	<record id="action_add_manufacturer" model="ir.actions.act_window">
