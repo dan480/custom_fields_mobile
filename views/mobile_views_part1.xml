@@ -17,7 +17,7 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="manufacturer" string="Add Model"/>
-<!--                <field name="model_phone" />-->
+             <field name="model_phone" />
             </tree>
         </field>
     </record>-->
