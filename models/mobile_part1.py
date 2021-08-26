@@ -1,14 +1,37 @@
 # -*- coding: utf-8 -*-
-from odoo import fields, models
+from odoo import fields, models, api
 
 
 class MobileProduct(models.Model):
     _inherit = 'product.template'
-    
-    #product_id = fields.Many2one('mobile.phone')
-    #manufacturer = fields.Selection([('huawei', 'Huawei')], string="Manufacturer")
-    #manufacturer = fields.One2many('custom.product', 'product_id')
-    model_phone = fields.Selection([('p20', 'P20')], string="Model")
+    _rec_name = 'name_manufacturer'
+
+    name_manufacturer = fields.Char('manufacturer')
+    manufacturer = fields.Many2one('product.template', string="Manufacturer")
+    # model = fields.One2many('product.template', 'manufacturer', string="Model")
+
+    @api.model
+    def create(self, values):
+        print("Student create method vals ", values)
+        rtn = super(MobileProduct, self).create(values)
+        return rtn
+
+    # No Decorator
+    def write(self, values):
+        print("Student write method vals ", values)
+        rtn = super(MobileProduct, self).write(values)
+        return rtn
+
+
+
+
+
+
+
+
+
+
+
     
 
    
