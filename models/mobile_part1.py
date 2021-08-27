@@ -8,7 +8,7 @@ class MobileProduct(models.Model):
 
     name_manufacturer = fields.Char('manufacturer')
     manufacturer = fields.Many2one('product.template', string="Manufacturer")
-    # model = fields.One2many('product.template', 'manufacturer', string="Model")
+    model = fields.Many2one('product.template', string='Model')
 
     @api.model
     def create(self, values):
@@ -16,22 +16,9 @@ class MobileProduct(models.Model):
         rtn = super(MobileProduct, self).create(values)
         return rtn
 
-    # No Decorator
     def write(self, values):
         print("Student write method vals ", values)
         rtn = super(MobileProduct, self).write(values)
         return rtn
-
-
-
-
-
-
-
-
-
-
-
-    
 
    
