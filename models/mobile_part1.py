@@ -3,25 +3,25 @@ from odoo import fields, models, api
 
 
 class MobileProduct(models.Model):
-    _name = 'mobile.product'
-    
-    manufacturer_id = fields.Many2one('manufacturer.phone', string="Manufacturer")
-    
+    _inherit = 'product.template'
+
+    manufacturer_id = fields.Many2one('manufacturer.phone')
+    manufacturer_name = fields.Char(string="Manufacturer", store=True, related="manufacturer_id.name")
+
+    @api.model
+    def create(self, values):
+        new_record = super(MobileProduct, self).create(values)
+        return new_record
+
+    def write(self, values):
+        rtn = super(MobileProduct, self).write(values)
+        return rtn
+
+
 class ManufacturerPhone(models.Model):
     _name = 'manufacturer.phone'
-    
-    manufacturer_name = fields.Char('Manufacturer')
-    
 
-#     @api.model
-#     def create(self, values):
-#         print("Student create method vals ", values)
-#         rtn = super(MobileProduct, self).create(values)
-#         return rtn
+    name = fields.Char('Manufacturer')
 
-#     def write(self, values):
-#         print("Student write method vals ", values)
-#         rtn = super(MobileProduct, self).write(values)
-#         return rtn
 
-   
+
