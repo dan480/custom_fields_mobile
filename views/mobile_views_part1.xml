@@ -1,38 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-<!-- 	<data>
+	<data>
+		<record model="ir.ui.view" id="view_manufacturer_phone_form">
+         <field name="name">manufacturer.phone.form</field>
+         <field name="model">manufacturer.phone</field>
+         <field name="type">form</field>
+         <field name="arch" type="xml">
+            <form>
+               <sheet>
+                  <group colspan="1" col="1">
+                     <field name="name" />
+                  </group>
+               </sheet>
+            </form>
+         </field>
+      </record>
+      <record model="ir.ui.view" id="view_manufacturer_phone_tree">
+         <field name="name">manufacturer.phone.tree</field>
+         <field name="model">manufacturer.phone</field>
+         <field name="type">tree</field>
+         <field name="arch" type="xml">
+            <tree>
+               <field name="name" />
+            </tree>
+         </field>
+      </record>
 		<record id="product_template_form" model="ir.ui.view">
 			<field name="name">product.template.product.form</field>
 		    <field name="model">product.template</field>
 			<field name="inherit_id" ref="product.product_template_only_form_view"/>
 			<field name="arch" type="xml">
 				<xpath expr="//field[@name='barcode']" position="after">
-					<field name='manufacturer' string="Manufacturer" widget="selection" options="{'no_create_edit': False}"/>
-					<field name='model' string="Model" widget="selection" options="{'no_create_edit': False}"/>
+					<field name='manufacturer_id' string="Manufacturer" options = "{'no_create': False, 'no_create_edit': True}"/>
 				</xpath>
 			</field>
 		</record>
-		<record id="action_add_manufacturer" model="ir.actions.act_window">
-			<field name="name">Manufacturer</field>
-			<field name="type">ir.actions.act_window</field>
-			<field name="res_model">product.template</field>
-			<field name="view_mode">tree,form</field>
+		<record model="ir.actions.act_window" id="action_manufacturer_phone">
+        <field name="name">Manufacturer</field>
+        <field name="res_model">manufacturer.phone</field>
+        <field name="view_mode">tree,form</field>
+		<!--<field name="view_ids" eval="[(5, 0, 0),(0, 0, {'view_mode': 'tree', 'view_id': ref('view_test_model_tree')}),(0, 0, {'view_mode': 'form', 'view_id': ref('view_test_model_form')})]"/>-->
+		<!--<field name="context">{}</field>-->
+		<!--<field name="domain">[()]</field>-->
+		<!--<field name="target">new</field>-->
 		</record>
-		<record id="action_add_model" model="ir.actions.act_window">
-			<field name="name">Model</field>
-			<field name="type">ir.actions.act_window</field>
-			<field name="res_model">product.template</field>
-			<field name="view_mode">tree,form</field>
-		</record>
+
 		<menuitem id="add_manufacturer"
 				  name="Manufacturer"
 				  parent="sale.menu_sale_config"
-				  action="action_add_manufacturer"
+				  action="action_manufacturer_phone"
 				  sequence="11"/>
-		<menuitem id="add_model"
-				  name="Model"
-				  parent="sale.menu_sale_config"
-				  action="action_add_model"
-				  sequence="12"/>
-	</data> -->
+	</data>
 </odoo>
