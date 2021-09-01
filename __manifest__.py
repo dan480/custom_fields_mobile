@@ -11,7 +11,6 @@
     'data': [
         'views/mobile_views_part1.xml',
         'views/mobile_views_part2.xml',
-        'security/base_security.xml',
         'security/ir.model.access.csv',
     ],
     'installable': True,
