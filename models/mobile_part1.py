@@ -23,8 +23,6 @@ class MobileProduct(models.Model):
     @api.onchange('manufacturer_id')
     def onchange_manufacturer_id(self):
         res = {}
-        print('manufacturer_id', self.manufacturer_id, self.manufacturer_id.id)
-        print('model_id', self.model_id)
         res['domain'] = {'model_id': [('model_phone_id', '=', self.manufacturer_id.id)]}
         return res
 
