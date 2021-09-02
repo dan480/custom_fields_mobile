@@ -10,7 +10,7 @@ class MobileProduct(models.Model):
     manufacturer_name = fields.Char(string="Manufacturer", store=True, related="manufacturer_id.name")
     model_id = fields.Many2one('model.phone')
     model_name = fields.Char(string="Model", store=True, related="model_id.name")
-    rel_model = fields.One2many('model.phone', 'model_id', 'Model')
+    rel_model = fields.One2many('model.phone', 'model_phone_id', 'Model')
 
     @api.model
     def create(self, values):
@@ -43,6 +43,7 @@ class ModelPhone(models.Model):
     _name = 'model.phone'
 
     name = fields.Char('Model')
+    model_phone_id = fields.Many2one('product.template', string='Model')
 
 
 
