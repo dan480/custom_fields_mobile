@@ -5,45 +5,47 @@ from odoo import fields, models, api
 class MobileProduct(models.Model):
     _inherit = 'product.template'
 
-    mobile_name = fields.Char(dafault="Mobile phone", readonly=True, compute ='_compute_name')
-    manufacturer_id = fields.Many2one('manufacturer.phone')
-    manufacturer_name = fields.Char(string="Manufacturer", store=True, related="manufacturer_id.name")
-    model_id = fields.Many2one('model.phone')
-    model_name = fields.Char(string="Model", store=True, related="model_id.name")
-    rel_model = fields.One2many('model.phone', 'model_phone_id', 'Model')
+    name = fields.Char(dafault="Mobile phone", readonly=True, compute='_compute_name')
+    manufacturer_id = fields.Many2one('manufacturer.phone', required=True)
+    manufacturer_id_name = fields.Char(string="Manufacturer", related="manufacturer_id.name")
+    model_id = fields.Many2one('model.phone', required=True)
+    model_id_name = fields.Char(string="Model", related="model_id.name")
 
     @api.model
     def create(self, values):
-        new_record = super(MobileProduct, self).create(values)
-        return new_record
+        rec = super(MobileProduct, self).create(values)
+        return rec
 
     def write(self, values):
-        res = super(MobileProduct, self).write(values)
-        return res
-    
+        rec = super(MobileProduct, self).write(values)
+        return rec
+
     @api.onchange('manufacturer_id')
-    def _manufacturer_onchange(self):
+    def onchange_manufacturer_id(self):
         res = {}
-        res['domain']={'model_id':[('manufacturer_id', '=', self.manufacturer_id.id)]}
+        print('manufacturer_id', self.manufacturer_id, self.manufacturer_id.id)
+        print('model_id', self.model_id)
+        res['domain'] = {'model_id': [('model_phone_id', '=', self.manufacturer_id.id)]}
         return res
-    
-    @api.depends('manufacturer_name', 'model_name')
+
+    @api.depends('manufacturer_id_name', 'model_id_name')
     def _compute_name(self):
         for rec in self:
-            rec.mobile_name = "Mobile phone " + str(rec.manufacturer_name) + " " + str(rec.model_name)
+            if rec.manufacturer_id_name or rec.model_id_name:
+                rec.name = "Mobile phone " + str(rec.manufacturer_id_name) + ' ' + str(rec.model_id_name)
+            else:
+                rec.name = "Mobile phone"
 
 
 class ManufacturerPhone(models.Model):
     _name = 'manufacturer.phone'
 
-    name = fields.Char('Manufacturer')
-    
-    
+    name = fields.Char(string="Manufacturer")
+    model_ids = fields.One2many('model.phone', 'model_phone_id', string="Manufacturer")
+
+
 class ModelPhone(models.Model):
     _name = 'model.phone'
 
-    name = fields.Char('Model')
-    model_phone_id = fields.Many2one('product.template', string='Model')
-
-
-
+    name = fields.Char(string="Model")
+    model_phone_id = fields.Many2one('manufacturer.phone', string="Model", required=True)
