@@ -30,6 +30,7 @@ class ManufacturerPhone(models.Model):
     _name = 'manufacturer.phone'
 
     name = fields.Char('Manufacturer')
+    rel_model = fields.Selection(related="'model.phone.name")
     
     
 class ModelPhone(models.Model):
