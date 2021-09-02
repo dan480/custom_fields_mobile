@@ -39,7 +39,7 @@
 				</tree>
 			</field>
 		</record>
-<!-- 		<record model="ir.ui.view" id="view_model_phone_tree">
+ 		<record model="ir.ui.view" id="view_model_phone_tree">
 			<field name="name">model.phone.tree</field>
 			<field name="model">model.phone</field>
          		<field name="type">tree</field>
@@ -48,7 +48,7 @@
 					<field name="name" />
 				</tree>
 			</field>
-		</record> -->
+		</record>
 		<record id="product_template_form" model="ir.ui.view">
 			<field name="name">product.template.product.form</field>
 		    	<field name="model">product.template</field>
@@ -69,11 +69,11 @@
 			<!--<field name="domain">[()]</field>-->
 			<!--<field name="target">new</field>-->
 		</record>
-<!-- 		<record model="ir.actions.act_window" id="action_model_phone">
+ 		<record model="ir.actions.act_window" id="action_model_phone">
 			<field name="name">Model</field>
 			<field name="res_model">model.phone</field>
         		<field name="view_mode">tree,form</field>
-		</record> -->
+		</record>
 
 		<menuitem id="add_manufacturer"
 				  name="Manufacturer"
