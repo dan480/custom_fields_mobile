@@ -8,8 +8,9 @@
          		<field name="arch" type="xml">
 				<form>
 					<sheet>
-						<group colspan="1" col="1">
-							<field name="name" />
+						<group>
+							<field name="name"/>
+							<field name="rel_name"/>
 						</group>
 					</sheet>
 				</form>
@@ -24,6 +25,7 @@
 					<sheet>
 						<group colspan="1" col="1">
 							<field name="name" />
+							<field name="rel_name"/>
 						</group>
 					</sheet>
 				</form>
