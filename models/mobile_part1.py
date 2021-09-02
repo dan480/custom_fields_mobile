@@ -5,6 +5,7 @@ from odoo import fields, models, api
 class MobileProduct(models.Model):
     _inherit = 'product.template'
 
+    mobile_name = fields.Char(dafault="Mobile phone", readonly=True, compute = add_name)
     manufacturer_id = fields.Many2one('manufacturer.phone')
     manufacturer_name = fields.Char(string="Manufacturer", store=True, related="manufacturer_id.name")
     model_id = fields.Many2one('model.phone')
@@ -24,6 +25,9 @@ class MobileProduct(models.Model):
         res = {}
         res['domain']={'model_id':[('manufacturer_id', '=', self.manufacturer_id.id)]}
         return res
+    
+    def add_name(self, values):
+        pass
 
 
 class ManufacturerPhone(models.Model):
