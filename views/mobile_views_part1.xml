@@ -15,7 +15,7 @@
 				</form>
 			</field>
 		</record>
-<!-- 		<record model="ir.ui.view" id="view_model_phone_form">
+ 		<record model="ir.ui.view" id="view_model_phone_form">
 			<field name="name">model.phone.form</field>
          		<field name="model">model.phone</field>
          		<field name="type">form</field>
@@ -28,7 +28,7 @@
 					</sheet>
 				</form>
 			</field>
-		</record> -->
+		</record>
 		<record model="ir.ui.view" id="view_manufacturer_phone_tree">
 			<field name="name">manufacturer.phone.tree</field>
          		<field name="model">manufacturer.phone</field>
