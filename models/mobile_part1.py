@@ -16,8 +16,14 @@ class MobileProduct(models.Model):
         return new_record
 
     def write(self, values):
-        rtn = super(MobileProduct, self).write(values)
-        return rtn
+        res = super(MobileProduct, self).write(values)
+        return res
+    
+    @api.onchange('manufacturer_id')
+    def _manufacturer_onchange(self):
+        res = {}
+        res['domain']={'model_id':[('manufacturer_id', '=', self.manufacturer_id.id)]}
+        return res
 
 
 class ManufacturerPhone(models.Model):
