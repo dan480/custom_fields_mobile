@@ -30,7 +30,7 @@ class ManufacturerPhone(models.Model):
     _name = 'manufacturer.phone'
 
     name = fields.Char('Manufacturer')
-    rel_model = fields.Selection(related='model.phone.name')
+    rel_model = fields.One2many('model.phone', 'name', 'Model')
     
     
 class ModelPhone(models.Model):
