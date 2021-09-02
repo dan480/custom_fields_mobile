@@ -27,7 +27,7 @@ class MobileProduct(models.Model):
         return res
     
     @api.depends('manufacturer_name', 'model_name')
-    def add_name(self):
+    def _compute_name(self):
         for rec in self:
             rec.mobile_name = "Mobile phone " + record.manufacturer_name + record.model_name
 
