@@ -66,26 +66,21 @@
 			<field name="name">Manufacturer</field>
 			<field name="res_model">manufacturer.phone</field>
 			<field name="view_mode">tree,form</field>
-			<!--<field name="view_ids" eval="[(5, 0, 0),(0, 0, {'view_mode': 'tree', 'view_id': ref('view_test_model_tree')}),(0, 0, {'view_mode': 'form', 'view_id': ref('view_test_model_form')})]"/>-->
-			<!--<field name="context">{}</field>-->
-			<!--<field name="domain">[()]</field>-->
-			<!--<field name="target">new</field>-->
 		</record>
  		<record model="ir.actions.act_window" id="action_model_phone">
 			<field name="name">Model</field>
 			<field name="res_model">model.phone</field>
         		<field name="view_mode">tree,form</field>
 		</record>
-
 		<menuitem id="add_manufacturer"
-				  name="Manufacturer"
-				  parent="sale.menu_sale_config"
-				  action="action_manufacturer_phone"
-				  sequence="11"/>
+			  name="Manufacturer"
+			  parent="sale.menu_sale_config"
+			  action="action_manufacturer_phone"
+			  sequence="11"/>
  		<menuitem id="add_model"
-				  name="Model"
-				  parent="sale.menu_sale_config"
-				  action="action_model_phone"
-				  sequence="12"/>
+			  name="Model"
+			  parent="sale.menu_sale_config"
+			  action="action_model_phone"
+			  sequence="12"/>
 	</data>
 </odoo>
